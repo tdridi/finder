@@ -7,7 +7,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
 
 .clear{clear:both;}
 .menusHeader ul li { display:inline;}
-.logoSite img{	width:150px;	height:150px;}
+.logoSite img{	width:150px;	height:150px; }
 .SearchHeader {}
 
 .wrapper,.header , .homeSlider, .breadcrumb, .content, #featured, .footer {    margin: 0 auto;    width: 960px;}
@@ -21,3 +21,9 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
 /* Remote Part*/
 .closer{ background:#eeeeee; margin:20px auto;	width:100%;}
 .far{ background:#eeeeee;margin:20px auto;	width:100%;}
+#titlecontent  {  position: absolute;  top: 100%;  animation: scroll 100s linear 4s infinite;  }  
+
+ul.gallery li{
+	margin:0 10px 10px 0;
+	display:inline-block;		
+}

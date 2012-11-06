@@ -21,5 +21,7 @@ while($row = mysql_fetch_array($result))
   } 
 
 ?>
+<?php
+include 'upload.php'; 
 
-
+?>

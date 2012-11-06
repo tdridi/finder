@@ -9,7 +9,15 @@ include 'config.php';
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?=$siteName ?></title>
 <link rel="stylesheet" href="css/site.css" media="all"/>
-
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css"/>
+<script src="libs/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="libs/jquery.prettyPhoto.js" charset="utf-8"></script>
+<script type="text/javascript" src="libs/pretty_custom.js" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function(){
+		$("ul.gallery").prettyGallery();
+	});
+</script>
 </head>
 
 <body>
@@ -19,6 +27,8 @@ include 'config.php';
 <?php include 'includes/header.php'; ?>
 <?php include 'includes/remote.php'; ?>
 <?php include 'includes/exclusive.php'; ?>
+<?php include 'includes/fully.php'; ?>
 </div>
+
 </body>
 </html>
