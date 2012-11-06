@@ -1,0 +1,13 @@
+Mon : OFF
+Tuesday : 
+	* VIA - 24345 - social phase 2 (2h)
+	* VIA - 24304 - Social channels design (5h)
+Wed:
+	* VIA - 24412 - Baggage policy (4h)
+	* Liens Appro quicktime page FR/EN (3h)
+Tuesday:
+	* VIA - 24412 - Baggage policy (6h)
+	* vw+ tutorial on CMS
+
+Friday : Git + Kohana (3h)
+	Put local vw Plus on local (4h)
