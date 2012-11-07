@@ -1,7 +1,6 @@
 <?php
 session_start();
 include 'config.php'; 
-
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -14,12 +13,11 @@ include 'config.php';
 <script type="text/javascript" src="libs/jquery.prettyPhoto.js" charset="utf-8"></script>
 <script type="text/javascript" src="libs/pretty_custom.js" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
-	$(document).ready(function(){
+/*	$(document).ready(function(){
 		$("ul.gallery").prettyGallery();
-	});
+	});*/
 </script>
 </head>
-
 <body>
 <div class="wrapper">
 <div class="logoSite"><img src="<?=$siteLogo ?>" width="150" /></div>
