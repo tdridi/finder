@@ -1,3 +1,4 @@
+Fully
 <ul class="gallery">
 <?php
 //this selects everything for the current user, ready to be used in the script below

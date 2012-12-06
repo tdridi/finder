@@ -28,4 +28,13 @@ $siteName = $ResultSiteName['site_name'];
 $ResultSiteLogo = mysql_fetch_array(mysql_query("SELECT * FROM $tblsite_name WHERE id ='1'"));
 $siteLogo = $ResultSiteLogo['site_logo'];
 
+//to Get menu 
+$ResultSiteMenu = mysql_fetch_array(mysql_query("SELECT * FROM menupage"));
+$menu = $ResultSiteMenu['id'];
+
+
+//to Get menu 
+$ResultSitePage = mysql_fetch_array(mysql_query("SELECT * FROM menupage WHERE id ='$menu'"));
+$page = $ResultSitePage['page'];
+
 ?>

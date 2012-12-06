@@ -20,13 +20,50 @@ include 'config.php';
 </head>
 <body>
 <div class="wrapper">
-<div class="logoSite"><img src="<?=$siteLogo ?>" width="150" /></div>
-<strong>look UP</strong>
-<?php include 'includes/header.php'; ?>
-<?php include 'includes/remote.php'; ?>
-<?php include 'includes/exclusive.php'; ?>
-<?php include 'includes/fully.php'; ?>
+<div class="headerBase">
+	<div class="logoSite"><img src="<?=$siteLogo ?>" width="150" /><strong><?=$siteName ?></strong></div>
+	<?php include 'includes/remote.php'; ?>
+	<div class="clear"></div>
 </div>
-
+<?php include 'includes/header.php'; ?>
+	<div class="contentWrap">
+		<?php
+		/*?>$get_path = $_SERVER["REQUEST_URI"]; 
+		$page_id = explode('?', $get_path); <?php */
+		if(isset($_GET["page"])){
+			
+			$page_id = $_GET["page"];
+			}else{
+			$page_id=0;	
+				
+				}
+		
+		//$page_id_value = array_shift($page_id);
+		//echo  $page_id;
+		
+		
+		if (!$page_id ){
+		
+			include 'pages/home.php'; 
+			  
+		} else	{
+			
+		
+		
+			//this selects everything for the current user, ready to be used in the script below
+			$result = mysql_query("SELECT * FROM menupage WHERE id='$page_id'");
+			
+			//this function will take the above query and create an array
+			while($row = mysql_fetch_array($result))
+			  {
+					$page = $row['page'];
+					include $page;
+			  }
+		
+			
+			}
+		?>
+	</div>
+</div>
 </body>
 </html>

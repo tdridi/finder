@@ -1,10 +1,4 @@
- <a href='profile.php'>Back to profile page</a> | <a href="../index.php">Back to home page</a>
 <br /><br />
-<?php
-session_start();
-include '../config.php'; 
-
-?>
 <?php
 $activeusename = $_SESSION['name'] ;
     $ud_ID = (int)$_POST["ID"];
@@ -20,7 +14,7 @@ $activeusename = $_SESSION['name'] ;
 
 mysql_query($query)or die(mysql_error());
 if(mysql_affected_rows()>=1){
-    echo "<p>($activeusename) Record Updated<p><br>";
+    echo "<p>($activeusename) Record Updated<p>";
 }else{
     echo "<p>($ud_ID) Not Updated<p>";
 }
