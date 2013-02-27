@@ -7,5 +7,7 @@
 
 <body>
 <p>Home</p>
+
+<?php $url = "http://www.parkavenuevw.ca/home.aspx?lng=3"; $arr = parse_url($url); $parameters = $arr["host"]; echo $parameters;  ?>
 </body>
 </html>
